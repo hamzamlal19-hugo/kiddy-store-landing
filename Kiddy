@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddy Store Fortune - Lancez Votre Boutique en Ligne pour Enfants</title>
+    <meta name="description" content="Créez facilement votre boutique en ligne de produits pour enfants (jouets, vêtements) sans stock et sans compétences techniques. Solution clé-en-main pour entrepreneurs.">
+    <style>
+        /* --- Styles Généraux --- */
+        :root {
+            --primary-color: #3498db; /* Bleu vif */
+            --secondary-color: #f1c40f; /* Jaune soleil */
+            --cta-color: #2ecc71; /* Vert émeraude */
+            --dark-text: #34495e; /* Gris foncé */
+            --light-text: #ffffff;
+            --background-color: #fdfefe;
+            --section-bg-color: #f8f9f9;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--background-color);
+            color: var(--dark-text);
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* --- Typographie --- */
+        h1, h2, h3 {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* --- Sections --- */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .section-alt {
+            background-color: var(--section-bg-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 20px;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        .hero h1 {
+            color: var(--light-text);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* --- Section "Pourquoi nous choisir" --- */
+        .features ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .features li {
+            padding: 12px 0;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .features li::before {
+            content: '✓';
+            color: var(--cta-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+        }
+        
+        /* --- Section Visuelle --- */
+        .visual-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* --- Témoignage --- */
+        .testimonial {
+            background-color: var(--secondary-color);
+            color: var(--dark-text);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        .testimonial blockquote {
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        .testimonial cite {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* --- Call to Action (CTA) --- */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--cta-color);
+            color: var(--light-text);
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6);
+        }
+        
+        /* --- Section Bonus --- */
+        .bonus {
+            border: 2px dashed var(--primary-color);
+            border-radius: 10px;
+            padding: 30px;
+            background-color: #f0f8ff;
+        }
+        
+        .bonus h3 {
+            margin-top: 0;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: var(--dark-text);
+            color: #bdc3c7;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .hero { padding: 60px 20px; }
+            .cta-button { font-size: 1.2rem; padding: 15px 30px;}
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Lancez la Boutique pour Enfants de Vos Rêves, Sans Effort.</h1>
+            <p class="subtitle">Transformez votre passion pour l'univers des enfants en une source de revenus automatisée. Kiddy Store Fortune vous livre une boutique clé-en-main, prête à vendre en 24h, sans stock ni complexité technique.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="features" class="section features">
+            <div class="container">
+                <h2>La solution la plus simple pour réussir dans l'e-commerce pour enfants.</h2>
+                <ul>
+                    <li><strong>Aucune compétence technique requise :</strong> Nous créons et configurons votre boutique de A à Z. Vous n'avez qu'à commencer à vendre.</li>
+                    <li><strong>Produits gagnants déjà intégrés :</strong> Une sélection des meilleurs jouets, vêtements et accessoires du moment, prête à être vendue en dropshipping.</li>
+                    <li><strong>Lancement ultra-rapide :</strong> Votre boutique est fonctionnelle et prête à recevoir ses premières commandes en moins de 24 heures.</li>
+                    <li><strong>Autonomie totale :</strong> Gérez vos ventes et vos clients depuis une interface simple et intuitive, accessible partout, tout le temps.</li>
+                    <li><strong>Potentiel de revenu illimité :</strong> Pas de stock à gérer, pas de frais cachés. Vous vous concentrez sur le marketing et encaissez les bénéfices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="visual" class="section section-alt visual-section">
+            <div class="container">
+                <h2>Votre Future Boutique, Magnifique et Professionnelle</h2>
+                <p>Recevez un site au design moderne, optimisé pour les mobiles et conçu pour convertir les visiteurs en clients fidèles.</p>
+                
+                <img src="https://via.placeholder.com/800x450.png/3498DB/FFFFFF?text=Votre+Superbe+Boutique+en+Ligne" alt="Aperçu d'une boutique en ligne Kiddy Store Fortune">
+            </div>
+        </section>
+
+        <section id="testimonial" class="section">
+            <div class="container">
+                 <h2>Ils nous ont fait confiance et ont réussi. Pourquoi pas vous ?</h2>
+                <div class="testimonial">
+                    <blockquote>"J'hésitais à me lancer, la technique me faisait peur. Avec Kiddy Store Fortune, j'ai eu ma boutique en ligne en une soirée, sans écrire une seule ligne de code. J'ai fait ma première vente le troisième jour ! C'est tout simplement génial."</blockquote>
+                    <cite>— Sophie L., Maman et maintenant E-commerçante épanouie</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section section-alt">
+            <div class="container">
+                <h2>Prêt(e) à Devenir Votre Propre Patron ?</h2>
+                <p>N'attendez plus. Le marché des produits pour enfants est en pleine explosion. C'est le moment idéal pour saisir votre part du gâteau.</p>
+                <a href="#purchase" class="cta-button">Je veux créer ma boutique maintenant</a>
+            </div>
+        </section>
+        
+        <section id="bonus" class="section">
+            <div class="container">
+                <div class="bonus">
+                    <h3>🎁 OFFRE SPÉCIALE DE LANCEMENT 🎁</h3>
+                    <p><strong>Attention, offre limitée aux 50 prochains entrepreneurs !</strong> En commandant aujourd'hui, bénéficiez de <strong>-50% sur votre pack Kiddy Store Fortune</strong> et recevez gratuitement notre guide "Les 10 secrets pour vendre des produits pour enfants sur les réseaux sociaux" (valeur : 49€).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Kiddy Store Fortune. Tous droits réservés.</p>
+            <p><a href="mailto:contact@kiddystorefortune.com">contact@kiddystorefortune.com</a> | <a href="#">Mentions Légales</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
